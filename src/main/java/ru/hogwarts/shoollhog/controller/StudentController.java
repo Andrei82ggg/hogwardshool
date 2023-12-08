@@ -1,37 +1,44 @@
 package ru.hogwarts.shoollhog.controller;
 
 import org.springframework.web.bind.annotation.*;
+import ru.hogwarts.shoollhog.dto.StudentDto;
 import ru.hogwarts.shoollhog.model.Student;
 import ru.hogwarts.shoollhog.service.StudentService;
 
-import java.util.Collection;
+import java.util.List;
 
 @RestController
-@RequestMapping("/students")
+@RequestMapping("/student")
 public class StudentController {
+
     private final StudentService studentService;
 
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
-    @GetMapping("/{id}")
-    public Student getStudent(@PathVariable Long id){
-        return studentService.getStudent(id);
-    }
+
     @PostMapping
-    public Student createStudent(@RequestBody Student student){
-        return studentService.addStudent(student);
+    public Student create(@RequestBody StudentDto student) {
+        return studentService.add(student.getName(), student.getAge());
     }
-    @PutMapping("/{id}")
-    public Student updateStudent(@PathVariable Long id, @RequestBody Student student){
-        return studentService.updateStudent(id, student);
-    }
-    @DeleteMapping("/{id}")
-    public void removeStudent(@PathVariable Long id){
-        studentService.removeStudent(id);
-    }
+
     @GetMapping
-    public Collection<Student> getStudentByAge(@RequestParam Integer age){
-        return studentService.getStudentsByAge(age);
+    public Student get(@RequestParam long id) {
+        return studentService.get(id);
+    }
+
+    @PutMapping
+    public Student update(@RequestBody Student student) {
+        return studentService.update(student.getId(), student.getName(), student.getAge());
+    }
+
+    @DeleteMapping
+    public Student delete(@RequestParam long id) {
+        return studentService.delete(id);
+    }
+
+    @GetMapping("/age-between")
+    public List<Student> getWhenAgeBetween(@RequestParam Integer min, @RequestParam Integer max) {
+        return studentService.getWhenAgeBetween(min, max);
     }
 }
