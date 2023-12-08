@@ -4,15 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="end">
+    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="three">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/AvatarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/dto/StudentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Avatar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/repository/AvatarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/repository/FacultyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/AvatarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/ShoollhogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/ShoollhogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/FacultyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/FacultyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Faculty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/FacultyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/FacultyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/StudentServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/model/Faculty.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/model/Faculty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/ShoollhogApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/controller/FacultyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/model/Faculty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/service/FacultyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/service/FacultyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/service/StudentServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,7 +55,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="bd" />
+        <entry key="$PROJECT_DIR$" value="prest" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,9 +101,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "prest",
+    "git-widget-placeholder": "prestql",
     "last_directory_selection": "C:/Users/Андрей/Java/shoollhog/src/test/java",
-    "last_opened_file_path": "C:/Users/Андрей/Java/shoollhog",
+    "last_opened_file_path": "C:/Users/Андрей/Java/hogwarts-id",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -93,6 +113,7 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.hogwarts.shoollhog.service" />
+      <recent name="ru.hogwarts.shoollhog.controller" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ShoollhogApplication">
@@ -168,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701669572188</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="three">
+      <option name="closed" value="true" />
+      <created>1701708491806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701708491806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +215,7 @@
     <MESSAGE value="one" />
     <MESSAGE value="two" />
     <MESSAGE value="end" />
-    <option name="LAST_COMMIT_MESSAGE" value="end" />
+    <MESSAGE value="three" />
+    <option name="LAST_COMMIT_MESSAGE" value="three" />
   </component>
 </project>
