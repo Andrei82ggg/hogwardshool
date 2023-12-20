@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="prestQL">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="выгрузка картинок">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/hogwarts/shoollhog/controller/FacultyControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/hogwarts/shoollhog/controller/StudentControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/hogwarts/shoollhog/model/LocationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/AvatarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/AvatarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/HttpServletResponse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/AvatarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/AvatarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -35,7 +33,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="prest" />
+        <entry key="$PROJECT_DIR$" value="prestql" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +79,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;prestql&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Андрей/Java/shoollhog/src/test/java&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Андрей/Java/hogwarts-id&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -95,44 +95,101 @@
       <recent name="ru.hogwarts.shoollhog.service" />
       <recent name="ru.hogwarts.shoollhog.controller" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.hogwarts.shoollhog.controller" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ShoollhogApplication">
-    <configuration name="ShoollhogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.ShoollhogApplication" />
+  <component name="RunManager" selected="JUnit.StudentControllerTest.delete_success">
+    <configuration name="FacultyControllerRestTemplateTest.create_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoollhog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.hogwarts.shoollhog.repository.*" />
+          <option name="PATTERN" value="ru.hogwarts.shoollhog.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.hogwarts.shoollhog.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.controller.FacultyControllerRestTemplateTest" />
+      <option name="METHOD_NAME" value="create_success" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoollhogApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentControllerTest.create_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoollhog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.hogwarts.shoollhog.repository.*" />
+          <option name="PATTERN" value="ru.hogwarts.shoollhog.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.hogwarts.shoollhog" />
-      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.ShoollhogApplicationTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="ru.hogwarts.shoollhog.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.controller.StudentControllerTest" />
+      <option name="METHOD_NAME" value="create_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerTest.delete_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoollhog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.hogwarts.shoollhog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.hogwarts.shoollhog.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.controller.StudentControllerTest" />
+      <option name="METHOD_NAME" value="delete_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoollhog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.hogwarts.shoollhog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.hogwarts.shoollhog.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.controller.StudentControllerTest" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentControllerTest.update_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoollhog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.hogwarts.shoollhog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.hogwarts.shoollhog.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.hogwarts.shoollhog.controller.StudentControllerTest" />
+      <option name="METHOD_NAME" value="update_success" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShoollhogApplication" />
-        <item itemvalue="JUnit.ShoollhogApplicationTests" />
-        <item itemvalue="JUnit.ShoollhogApplicationTests" />
-        <item itemvalue="Application.ShoollhogApplication" />
-        <item itemvalue="Application.ShoollhogApplication" />
+        <item itemvalue="JUnit.StudentControllerTest.delete_success" />
+        <item itemvalue="JUnit.StudentControllerTest.update_success" />
+        <item itemvalue="JUnit.StudentControllerTest.get" />
+        <item itemvalue="JUnit.StudentControllerTest.create_success" />
+        <item itemvalue="JUnit.FacultyControllerRestTemplateTest.create_success" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702990863988</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="выгрузка картинок">
+      <option name="closed" value="true" />
+      <created>1703066331118</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703066331118</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,8 +293,9 @@
     <MESSAGE value="two" />
     <MESSAGE value="end" />
     <MESSAGE value="three" />
-    <MESSAGE value="prestQLAll" />
     <MESSAGE value="prestQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="prestQL" />
+    <MESSAGE value="prestQLAll" />
+    <MESSAGE value="выгрузка картинок" />
+    <option name="LAST_COMMIT_MESSAGE" value="выгрузка картинок" />
   </component>
 </project>
