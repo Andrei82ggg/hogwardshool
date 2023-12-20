@@ -1,7 +1,15 @@
 package ru.hogwarts.shoollhog.service;
 
-import jakarta.persistence.criteria.Path;
+
+
+
+import java.nio.file.Path;
+
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -12,6 +20,7 @@ import ru.hogwarts.shoollhog.repository.StudentRepository;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static java.nio.file.StandardOpenOption.CREATE_NEW;
 
@@ -34,14 +43,12 @@ public class AvatarService {
 
     public ResponseEntity<String> uploadAvatar(Long studentId, MultipartFile avatarFile) throws IOException {
         Student student = studentRepository.findById(studentId).get();
-        // строчка ниже работает для MacOs. заменить для Windows: Path filePath = Path.of(avatarsDir, student + "." + getExtensions(avatarFile.getOriginalFilename()));
-        Path filePath;
-        filePath = Path.of(avatarsDir, student + "." + getExtensions(avatarFile.getOriginalFilename()));
-        Files.createDirectories(filePath.getParentPath());
+        Path filePath = Path.of(avatarsDir, student + "." + getExtensions(avatarFile.getOriginalFilename()));
+        Files.createDirectories(filePath.getParent());
         Files.deleteIfExists(filePath);
         try (
                 InputStream is = avatarFile.getInputStream();
-                OutputStream os = Files.newOutputStream((java.nio.file.Path) filePath, CREATE_NEW);
+                OutputStream os = Files.newOutputStream(filePath, CREATE_NEW);
                 BufferedInputStream bis = new BufferedInputStream(is, 1024);
                 BufferedOutputStream bos = new BufferedOutputStream(os, 1024);
         ) {
