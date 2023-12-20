@@ -20,7 +20,7 @@ import ru.hogwarts.shoollhog.repository.StudentRepository;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Path;
+
 
 import static java.nio.file.StandardOpenOption.CREATE_NEW;
 
@@ -43,7 +43,7 @@ public class AvatarService {
 
     public ResponseEntity<String> uploadAvatar(Long studentId, MultipartFile avatarFile) throws IOException {
         Student student = studentRepository.findById(studentId).get();
-        Path filePath = Path.of(avatarsDir, student + "." + getExtensions(avatarFile.getOriginalFilename()));
+        Path filePath = Path.of(new File("").getAbsolutePath(),avatarsDir, student + "." + getExtensions(avatarFile.getOriginalFilename()));
         Files.createDirectories(filePath.getParent());
         Files.deleteIfExists(filePath);
         try (
