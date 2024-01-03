@@ -41,4 +41,16 @@ public class StudentController {
     public List<Student> getWhenAgeBetween(@RequestParam Integer min, @RequestParam Integer max) {
         return studentService.getWhenAgeBetween(min, max);
     }
+    @GetMapping("/count")
+    public int getCount(){
+        return studentService.getCount();
+    }
+    @GetMapping("/avg-age")
+    public double getAvgAge(){
+        return studentService.getAvgAge();
+    }
+    @GetMapping("/last-five")
+    public List<Student> getLastFive(){
+        return studentService.getLastFive();
+    }
 }

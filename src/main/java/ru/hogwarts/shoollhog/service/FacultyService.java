@@ -20,7 +20,8 @@ public class FacultyService {
     }
 
     public Faculty get(long id) {
-        return facultyRepository.findById(id).get();
+        Faculty faculty = facultyRepository.findById(id).get();
+        return faculty;
     }
 
     public Faculty update(long id, String name, String color) {
