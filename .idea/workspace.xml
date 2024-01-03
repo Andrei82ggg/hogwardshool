@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/hogwarts/shoollhog/controller/FacultyControllerWebMvcTest.java" afterDir="false" />
+    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="контроллеры для студента с пагинацией">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/AvatarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/AvatarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Avatar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/model/Avatar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/AvatarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/AvatarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/FacultyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/FacultyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/hogwarts/shoollhog/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/hogwarts/shoollhog/controller/StudentControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703873683292</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="контроллеры для студента с пагинацией">
+      <option name="closed" value="true" />
+      <created>1704269588572</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704269588572</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +306,8 @@
     <MESSAGE value="выгрузка картинок" />
     <MESSAGE value="test mockMvc" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="контроллеры для студента с пагинацией" />
+    <option name="LAST_COMMIT_MESSAGE" value="контроллеры для студента с пагинацией" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
