@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="контроллеры для студента с пагинацией">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changelog-master.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/scripts/indices" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/scripts/user.sql" afterDir="false" />
+    <list default="true" id="254e71fb-c0d3-43dd-b83f-75c0bd252c14" name="Changes" comment="логирование сервисов">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/hogwarts/shoollhog/controller/InfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/service/AvatarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/hogwarts/shoollhog/service/AvatarService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,7 +32,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="liquibas" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,9 +80,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "liquibas",
+    "git-widget-placeholder": "logger",
     "last_directory_selection": "C:/Users/Андрей/Java/shoollhog/src/test/java",
-    "last_opened_file_path": "C:/Users/Андрей/Java/hogwarts-id",
+    "last_opened_file_path": "C:/Users/Андрей/Java/shoollhog/target/classes",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -95,6 +93,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.hogwarts.shoollhog.service" />
       <recent name="ru.hogwarts.shoollhog.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Андрей\Java\shoollhog\target\classes" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -287,7 +288,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704269588572</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="liquibase">
+      <option name="closed" value="true" />
+      <created>1704789895561</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704789895561</updated>
+    </task>
+    <task id="LOCAL-00014" summary="логирование сервисов">
+      <option name="closed" value="true" />
+      <created>1704794568804</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704794568804</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,6 +329,8 @@
     <MESSAGE value="test mockMvc" />
     <MESSAGE value="test" />
     <MESSAGE value="контроллеры для студента с пагинацией" />
-    <option name="LAST_COMMIT_MESSAGE" value="контроллеры для студента с пагинацией" />
+    <MESSAGE value="liquibase" />
+    <MESSAGE value="логирование сервисов" />
+    <option name="LAST_COMMIT_MESSAGE" value="логирование сервисов" />
   </component>
 </project>
