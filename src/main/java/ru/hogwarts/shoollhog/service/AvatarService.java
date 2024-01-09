@@ -7,6 +7,8 @@ import java.awt.print.Pageable;
 import java.nio.file.Path;
 
 import jakarta.servlet.http.HttpServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 import org.springframework.data.domain.Page;
@@ -33,6 +35,8 @@ import static java.nio.file.StandardOpenOption.CREATE_NEW;
 @Service
 public class AvatarService {
 
+    private final Logger logger = LoggerFactory.getLogger(AvatarService.class);
+
     private final AvatarRepository avatarRepository;
     private final StudentRepository studentRepository;
     private final String avatarsDir;
@@ -48,6 +52,7 @@ public class AvatarService {
     }
 
     public ResponseEntity<String> uploadAvatar(Long studentId, MultipartFile avatarFile) throws IOException {
+        logger.info("Was invoked method uploadAvatar");
         Student student = studentRepository.findById(studentId).get();
         Path filePath = Path.of(new File("").getAbsolutePath(),avatarsDir, student + "." + getExtensions(avatarFile.getOriginalFilename()));
         Files.createDirectories(filePath.getParent());
@@ -71,10 +76,12 @@ public class AvatarService {
     }
 
     private String getExtensions(String fileName) {
+        logger.info("Was invoked method getExtensions");
         return fileName.substring(fileName.lastIndexOf(".") + 1);
     }
 
     public void downloadAvatar(Long id, HttpServletResponse response) throws IOException {
+        logger.info("Was invoked method downloadAvatar");
         Avatar avatar = avatarRepository.findById(id).get();
         Path path = Path.of(avatar.getFilePath());
         try (InputStream is = Files.newInputStream(path);
