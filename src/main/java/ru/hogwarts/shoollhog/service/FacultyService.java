@@ -43,4 +43,15 @@ public class FacultyService {
         facultyRepository.deleteById(id);
         return facultyForDelete;
     }
+    public String getLongestName(){
+        /*return facultyRepository.findAll().stream()
+                .map(Faculty::getName)
+                .sorted((name1, name2)-> - 1 * (name1.length() - name2.length()))
+                .toList()
+                .get(0);*/
+        return facultyRepository.findAll().stream()
+                .map(Faculty:: getName)
+                .max((name1, name2) -> name1.length() - name2.length())
+                .get();
+    }
 }
