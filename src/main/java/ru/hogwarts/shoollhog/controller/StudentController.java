@@ -62,4 +62,12 @@ public class StudentController {
     public  double getAvgAgeWithStream(){
         return studentService.getAvgAgeWithStream();
     }
+    @GetMapping("/print-in-console")
+    public  void printStudents(){
+        studentService.printStudents();
+    }
+    @GetMapping("/print-in-console-sync")
+    public  void printStudentsSync(){
+        studentService.printStudentsSync();
+    }
 }
