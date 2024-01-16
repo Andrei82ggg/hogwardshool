@@ -1,3 +1,3 @@
 databaseChangeLog:
   - include:
-      file: liquibase/scripts/indes.sql
+      file: liquibase/scripts/indices.sql
